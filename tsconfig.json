@@ -1,0 +1,13 @@
+{
+  "compilerOptions":{
+    "target":"ESNEXT",
+    "module":"commonjs",
+    "outDir":"dist",
+    "sourceMap":true,
+    "noImplicitAny":true,
+    "moduleResolution":"node",
+    "baseUrl":".",
+    "esModuleInterop": true 
+  },
+  "include": ["server.ts","src"]
+}
