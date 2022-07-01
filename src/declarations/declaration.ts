@@ -1,1 +1,1 @@
-declare module 'jsonwebtoken';
+declare module "jsonwebtoken";

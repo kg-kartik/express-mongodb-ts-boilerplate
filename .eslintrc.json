@@ -1,36 +1,26 @@
 {
-    "root": true,
-    "ignorePatterns": [],
-    "overrides": [
-      {
-        "files": ["*.ts"],
-        "parserOptions": {
-          "project": ["tsconfig.json"],
-          "createDefaultProgram": true
-        },
-        "extends": ["plugin:@typescript-eslint/recommended", "plugin:prettier/recommended"],
-        "rules": {
-          "prettier/prettier": ["off", { "doublequote": true }],
-          "max-len": "off",
-          "no-underscore-dangle": "off",
-          "arrow-body-style": "off",
-          "@typescript-eslint/no-explicit-any": "off",
-          "@typescript-eslint/no-var-requires": "off",
-          "@typescript-eslint/ban-types": "off",
-          "@typescript-eslint/no-unsafe-assignment": "off",
-          "@typescript-eslint/no-unsafe-member-access": "off",
-          "@typescript-eslint/no-unsafe-call": "off",
-          "@typescript-eslint/unbound-method": "off",
-          "@typescript-eslint/no-floating-promises": "off",
-          "@typescript-eslint/explicit-module-boundary-types": "off",
-          "@typescript-eslint/no-unused-vars": "off",
-          "@typescript-eslint/naming-convention": "off",
-          "@typescript-eslint/no-unsafe-return": "off",
-          "@typescript-eslint/no-empty-function": "off",
-          "@typescript-eslint/no-inferrable-types": "off",
-          "@typescript-eslint/restrict-template-expressions": "warn",
-          "jsdoc/newline-after-description": "off"
-        }
-      }
-    ]
-  }
+    "env": {
+        "browser": true,
+        "commonjs": true,
+        "es2021": true
+    },
+    "extends": ["airbnb-base", "plugin:prettier/recommended"],
+    "parser": "@typescript-eslint/parser",
+    "parserOptions": {
+        "ecmaVersion": "latest"
+    },
+    "plugins": ["@typescript-eslint", "prettier"],
+    "rules": {
+        "import/prefer-default-export": "off",
+        "spaced-comment": "off",
+        "import/order": "off",
+        "quotes": ["double"],
+        "import/newline-after-import": "off",
+        "no-console": "off",
+        "import/no-unresolved": "off",
+        "no-unused-vars": "off",
+        "no-underscore-dangle": "off",
+        "import/extensions": "off",
+        "consistent-return": "off"
+    }
+}
